@@ -1,7 +1,7 @@
-package src.main.java.com;
-import src.main.java.com.creators.DocumentCreator;
-import src.main.java.com.creators.PdfCreator;
-import src.main.java.com.creators.WordCreator;
+package com;
+import com.creators.DocumentCreator;
+import com.creators.PdfCreator;
+import com.creators.WordCreator;
 public class Main {
     private static DocumentCreator creator;
 

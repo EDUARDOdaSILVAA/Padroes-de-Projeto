@@ -1,0 +1,20 @@
+# Padrão Criacional: Factory Method
+
+Projeto Acadêmico: Bacharelado em Ciência da Computação (UTFPR - Campo Mourão)
+
+O Factory Method é um padrão criacional que fornece uma interface para criar objetos numa superclasse, mas permite que as subclasses alterem o tipo de objetos que serão criados.
+
+## Contexto e Problema
+Num sistema corporativo de gestão documental, inicialmente processamos apenas ficheiros PDF. Se precisarmos de adicionar suporte para ficheiros Word, instanciar os objetos diretamente usando `new PdfDocument()` ou `new WordDocument()` acopla rigidamente o código a essas classes. Isso encheria o sistema de `if/else` e violaria o Princípio Aberto/Fechado.
+
+##  Solução
+A responsabilidade de instanciar o objeto é delegada para subclasses especialistas (`PdfCreator` e `WordCreator`). O código cliente interage apenas com a abstração `DocumentCreator`, sem precisar de saber qual o documento específico que está a ser processado.
+
+## Como executar
+
+Este projeto inclui um `Makefile` para facilitar a compilação no terminal Linux.
+
+1. Abre o terminal nesta pasta (`factory-method-java`).
+2. Para compilar e executar o código automaticamente, corre:
+   ```bash
+   make

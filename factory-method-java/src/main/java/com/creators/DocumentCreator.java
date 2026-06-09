@@ -1,5 +1,5 @@
-package src.main.java.com.creators;
-import src.main.java.com.products.Document;
+package com.creators;
+import com.products.Document;
 public abstract class DocumentCreator {
 
     public abstract Document createDocument();

@@ -1,0 +1,20 @@
+# Padrão Comportamental: Strategy
+
+Projeto Acadêmico: Bacharelado em Ciência da Computação (UTFPR - Campo Mourão)
+
+O Strategypermite definir uma família de algoritmos, colocá-los em estruturas separadas e tornar os seus objetos intercambiáveis em tempo de execução.
+
+## Contexto e Problema
+A equipe de desenvolvimento precisa de gerar propostas comerciais para uma Empresa Júnior cliente. O cálculo pode ser feito por Preço Fixo (com taxa de risco) ou Por Hora. Colocar toda esta matemática dentro da struct da proposta geraria um código confuso e frágil. Se um novo modelo de cobrança for criado, a classe principal teria de ser alterada.
+
+## Solução
+Extraímos os algoritmos de cálculo para estratégias independentes (`FixedPriceStrategy` e `HourlyStrategy`) que assinam a mesma interface `PricingStrategy`. A proposta atua apenas como Contexto: ela armazena uma referência para a interface e delega o cálculo, permitindo trocar o modelo de contrato em tempo de execução de forma limpa e idiomática em Go.
+
+## Como executar
+
+Podes rodar o projeto utilizando o `Makefile` incluído.
+
+1. Abre o terminal nesta pasta (`strategy-go`).
+2. Para compilar e testar os ficheiros Go, corre:
+   ```bash
+   make run

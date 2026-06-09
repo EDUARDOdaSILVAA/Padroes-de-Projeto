@@ -1,4 +1,4 @@
-package src.main.java.com.products;
+package com.products;
 public class WordDocument implements Document {
     @Override
     public void open() {
