@@ -13,6 +13,7 @@ Este repositório contém a implementação prática de três Padrões de Projet
 * Direitos Autorais e Referência: Todos os conceitos, fundamentações teóricas e ilustrações baseiam-se no catálogo do [Refactoring Guru](https://refactoring.guru/pt-br/design-patterns).
 * Uso de Inteligência Artificial: A estruturação inicial das pastas de arquivos, trechos de códigos e auxílio na sistaxe das inguagens, revisão da documentação, além da criação dos makefiles deste repositório contaram com o auxílio da LLM Google Gemini 3.1 Pro, sendo posteriormente testados, adaptados e organizados para os fins desta entrega. Foi também utilizado o copilot free para correção de erros de importação.
 
+## 1. Padrão Criacional: Factory Method (Java)
 O Factory Method é um padrão criacional que fornece uma interface para criar objetos numa superclasse, mas permite que as subclasses alterem o tipo de objetos que serão criados.
 
 * Contexto: Um sistema corporativo de gestão documental que processa ficheiros PDF e Word.
