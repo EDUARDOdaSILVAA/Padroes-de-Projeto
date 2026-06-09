@@ -1,0 +1,18 @@
+# Padrão Estrutural: Adapter
+
+Projeto Acadêmico: Bacharelado em Ciência da Computação (UTFPR - Campo Mourão)
+
+O Adapter permite a colaboração de objetos com interfaces incompatíveis, atuando como um "tradutor".
+
+##  Contexto e Problema
+Um sistema moderno de análise precisa de ler dados, mas o laboratório possui sensores legados que devolvem dados num formato incompatível (texto invertido). O sistema moderno consome a interface `Target`, e o sensor legado não pode ser alterado.
+
+##  Solução
+O `SensorAdapter` que implementa a interface moderna (`Target`) e compõe o `LegacySensor`. Quando o sistema pede os dados, o adaptador solicita ao sensor antigo, inverte a string em tempo real usando `std::reverse`, e devolve os dados limpos ao sistema.
+
+## Como executar
+
+1. Abre o terminal nesta pasta (`adapter-cpp`).
+2. Para compilar e executar o código, corre:
+   ```bash
+   make

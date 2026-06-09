@@ -22,7 +22,14 @@ O Factory Method é um padrão criacional que fornece uma interface para criar o
 
 ---
 
+## 2. Padrão Estrutural: Adapter (C++)
 
+O Adapter é um padrão estrutural que permite a colaboração de objetos com interfaces incompatíveis, atuando como um "tradutor" entre dois sistemas.
+
+* Contexto: Um sistema moderno de análise de dados precisa de ler informações contínuas do ambiente, mas o laboratório possui sensores antigos que devolvem os dados num formato incompatível.
+* Problema: O código cliente foi desenhado para consumir uma interface padrão (`Target`). Alterar o sensor legado não é possível e adaptar o sistema moderno poluiria a arquitetura limpa.
+* Solução: Criamos um `SensorAdapter` que implementa a interface moderna e "envolve" o sensor legado. Ele recebe a chamada, traduz os dados em tempo real e devolve o resultado formatado.
+* Código e Execução: Consulta a pasta `adapter-cpp/`.
 
 ---
 
